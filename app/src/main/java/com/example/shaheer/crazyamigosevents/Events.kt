@@ -3,6 +3,8 @@ package com.example.shaheer.crazyamigosevents
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
+import android.view.Menu
+import android.view.MenuInflater
 
 import kotlinx.android.synthetic.main.activity_events.*
 
@@ -19,4 +21,9 @@ class Events : AppCompatActivity() {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        MenuInflater(this).inflate(R.menu.menu,menu)
+
+        return super.onCreateOptionsMenu(menu)
+    }
 }
